@@ -135,7 +135,6 @@ bool isInFigure(point* p, figure* fig){
     return (fig->type == Rectangle ? isInRectangle(p, &fig->rect) : isInCircle(p, &fig->circ));
 }
 
-// TODO: Imporove comparing
 // Funkcja zliczajaca ile razy pinezka przechodzi przez figure
 // rekurencyjnie liczac ile razy przecina figure przed zlozeniem
 // i ile razy jej odbicie przecina figure przed zlozeniem
@@ -192,4 +191,5 @@ int main(){
     }
     free(plane);
     return 0;
+
 }
