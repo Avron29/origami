@@ -67,7 +67,6 @@ void getFoldedFigure(figure* base, figure* f){
     else {
         f->circ = base->circ;
     }
-
     f->folds = malloc((base->foldsSize + 1) * sizeof(line));
     f->foldsSize = base->foldsSize + 1;
     if (base->foldsSize > 0){
@@ -191,5 +190,4 @@ int main(){
     }
     free(plane);
     return 0;
-
 }
